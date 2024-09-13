@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.main__div {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 800px;
+  min-width: 400px;
+  max-width: 800px;
+  max-height: 800px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.bg__img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.grid__div,
+.single__bill__box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid__div {
+  gap: 20px;
+}
+
+input {
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+}
+
+input:focus {
+  outline: none;
+}
+
+.bill__heading {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content__div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e1e1e1;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #c0c0c0;
+}
+
+.main__bill__box {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+#bill_no_input {
+  z-index: 1;
+  position: absolute;
+  top: 199px;
+  left: 190px;
+  font-size: 12px;
+}
+
+#book_no_input {
+  z-index: 1;
+  position: absolute;
+  top: 199px;
+  left: 420px;
+  font-size: 12px;
+}
+
+#date_input {
+  z-index: 1;
+  position: absolute;
+  top: 199px;
+  left: 560px;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+#messrs_input {
+  z-index: 1;
+  position: absolute;
+  top: 233px;
+  left: 190px;
+  font-size: 12px;
+}
+
+#gstin_input {
+  z-index: 1;
+  position: absolute;
+  top: 262px;
+  left: 190px;
+  font-size: 12px;
+}
+
+#gam_input {
+  z-index: 1;
+  position: absolute;
+  top: 262px;
+  left: 535px;
+  font-size: 12px;
+}
+
+#sgst {
+  z-index: 1;
+  position: absolute;
+  top: 578px;
+  left: 590px;
+  font-size: 12px;
+}
+
+#cgst {
+  z-index: 1;
+  position: absolute;
+  top: 602px;
+  left: 590px;
+  font-size: 12px;
+}
+
+#igst {
+  z-index: 1;
+  position: absolute;
+  top: 627px;
+  left: 585px;
+  font-size: 12px;
+}
+
+#total {
+  z-index: 1;
+  position: absolute;
+  top: 552px;
+  left: 580px;
+  font-size: 12px;
+}
+
+#grand_total {
+  z-index: 1;
+  position: absolute;
+  top: 650px;
+  left: 580px;
+  font-size: 12px;
+}
+
+#IFSC {
+  z-index: 1;
+  position: absolute;
+  top: 635px;
+  left: 265px;
+  font-size: 12px;
+}
+
+#ACNO {
+  z-index: 1;
+  position: absolute;
+  top: 653px;
+  left: 195px;
+  font-size: 11px;
+}
+
+#INWORD {
+  z-index: 1;
+  position: absolute;
+  top: 672px;
+  left: 220px;
+  font-size: 12px;
+}
+
+.full__details {
+  position: absolute;
+  top: 315px;
+  left: 140px;
+  z-index: 1;
+  font-size: 12px;
+}
+
+.full__details .single__bill__box {
+  height: 30px;
+}

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p class="footer">Developed By NorthFox Group</p>
+    <div class="content__div">
+        <p class="bill__heading">Bill Details</p>
+        <hr
+            style="width: 100%; height: 1px; background-color: black; border: none; margin-top: 10px; margin-bottom: 10px;" />
+
+        <div class="grid__div">
+            <div class="input__div">
+                <label for="">
+                    Bill No.
+                </label>
+                <input type=" text" class="" placeholder="Bill No."
+                    onchange="document.getElementById('bill_no_input').innerText = this.value" />
+            </div>
+            <div class="input__div">
+                <label for="">
+                    Book No.
+                </label>
+                <input type=" text" class="" placeholder="Book No."
+                    onchange="document.getElementById('book_no_input').innerText = this.value" />
+            </div>
+            <div class="input__div">
+                <label for="">
+                    Date
+                </label>
+                <input type=" text" class="" placeholder="Date"
+                    onchange="document.getElementById('date_input').innerText = this.value" />
+            </div>
+            <div class="input__div">
+                <label for="">
+                    Messrs
+                </label>
+                <input type=" text" class="" placeholder="Messrs"
+                    onchange="document.getElementById('messrs_input').innerText = this.value" />
+            </div>
+            <div class="input__div">
+                <label for="">
+                    GSTIN
+                </label>
+                <input type=" text" class="" placeholder="GSTIN"
+                    onchange="document.getElementById('gstin_input').innerText = this.value" />
+            </div>
+            <div class="input__div">
+                <label for="">
+                    Gam
+                </label>
+                <input type=" text" class="" placeholder="Gam"
+                    onchange="document.getElementById('gam_input').innerText = this.value" />
+            </div>
+            <div class="input__div">
+                <label for="">
+                    SGST
+                </label>
+                <input type=" text" class="" placeholder="SGST"
+                    onchange="document.getElementById('sgst').innerText = this.value" />
+            </div>
+            <div class="input__div">
+                <label for="">
+                    CGST
+                </label>
+                <input type=" text" class="" placeholder="CGST"
+                    onchange="document.getElementById('cgst').innerText = this.value" />
+            </div>
+            <div class="input__div">
+                <label for="">
+                    IGST
+                </label>
+                <input type=" text" class="" placeholder="IGST"
+                    onchange="document.getElementById('igst').innerText = this.value" />
+            </div>
+            <div class="input__div">
+                <label for="">
+                    Total
+                </label>
+                <input type=" text" class="" placeholder="Total"
+                    onchange="document.getElementById('total').innerText = this.value" />
+            </div>
+            <div class="input__div">
+                <label for="">
+                    Grand Total
+                </label>
+                <input type=" text" class="" placeholder="Grand Total"
+                    onchange="document.getElementById('grand_total').innerText = this.value" />
+            </div>
+            <div class=""></div>
+
+
+            <div class="input__div">
+                <label for="">
+                    Account No.
+                </label>
+                <input type=" text" class="" placeholder="Account No."
+                    onchange="document.getElementById('ACNO').innerText = this.value" />
+            </div>
+
+            <div class="input__div">
+                <label for="">
+                    IFSC Code
+                </label>
+                <input type=" text" class="" placeholder="IFSC Code"
+                    onchange="document.getElementById('IFSC').innerText = this.value" />
+            </div>
+
+            <div class="input__div">
+                <label for="">
+                    Amount in Words
+                </label>
+                <input type=" text" class="" placeholder="Amount in Words"
+                    onchange="document.getElementById('INWORD').innerText = this.value" />
+            </div>
+        </div>
+
+
+        <div class="main__bill__box" id="main__bill__box">
+            <div class="single__bill__box">
+                <div class="input__div" style="width: 100px;">
+                    <label for="">
+                        દાગીના
+                    </label>
+                    <input type=" text" class="" placeholder="દાગીના" id="" />
+                </div>
+                <div class="input__div" style="width: 150px;">
+                    <label for="">
+                        H.S.N કોડ નં.
+                    </label>
+                    <input type=" text" class="" placeholder="H.S.N કોડ નં." />
+                </div>
+                <div class="input__div">
+                    <label for="">
+                        માલ ની જાત
+                    </label>
+                    <input type=" text" class="" placeholder="માલ ની જાત" />
+                </div>
+                <div class="input__div">
+                    <label for="">
+                        જથ્થો
+                    </label>
+                    <input type=" text" class="" placeholder="જથ્થો" />
+                </div>
+                <div class="input__div">
+                    <label for="">
+                        ભાવ
+                    </label>
+                    <input type=" text" class="" placeholder="ભાવ" />
+                </div>
+                <div class="input__div" style="width: 100px;">
+                    <label for="">
+                        રકમ
+                    </label>
+                    <input type=" text" class="" placeholder="રકમ" />
+                </div>
+                <div class="input__div" style="width: 100px;">
+                    <label for="">
+                        પૈસા
+                    </label>
+                    <input type=" text" class="" placeholder="પૈસા" />
+                </div>
+            </div>
+        </div>
+
+        <button class="btn" onclick="addNewRow()" style="height: 40px; margin-top: auto;">
+            Add New Row
+        </button>
+
+        <div class="" style="height: 100px;"></div>
+
+
+        <button class="btn bill__btn" onclick="loadBill()">
+            Load Invoice
+        </button>
+
+        <button class="btn" onclick="printBill()">
+            Print Invoice
+        </button>
+    </div>
+    <div class="main__div">
+        <div class="bill__details">
+            <p id="bill_no_input"></p>
+            <p id="book_no_input"></p>
+            <p id="date_input"></p>
+            <p id="messrs_input"></p>
+            <p id="gstin_input"></p>
+            <p id="gam_input"></p>
+        </div>
+
+        <div class="full__details" id="full__details">
+
+        </div>
+
+        <p id="total"></p>
+        <p id="grand_total"></p>
+        <p id="sgst"></p>
+        <p id="cgst"></p>
+        <p id="igst"></p>
+
+        <p id="IFSC"></p>
+        <p id="ACNO"></p>
+        <p id="INWORD"></p>
+        <img src="bg.jpeg" alt="bg" class="bg__img">
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
