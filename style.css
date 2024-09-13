@@ -253,3 +253,19 @@ input:focus {
   font-size: 12px;
   font-weight: bold;
 }
+
+#sgst_value{
+  z-index: 1;
+  position: absolute;
+  top: 787px;
+  left: 570px;
+  font-size: 15px;
+}
+
+#cgst_value{
+  z-index: 1;
+  position: absolute;
+  top: 818px;
+  left: 570px;
+  font-size: 15px;
+}
