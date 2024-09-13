@@ -38,13 +38,13 @@ function loadBill() {
 
   for (let i = 0; i < array.length; i++) {
     innerHTML = `<div class="single__bill__box">
-                <p style="width: 30px;">${array[i].daagina}</p>
-                <p style="width: 60px;">${array[i].hsn_code}</p>
-                <p style="width: 170px;">${array[i].maal}</p>
-                <p style="width: 45px;">${array[i].jatho}</p>
-                <p style="width: 60px;">${array[i].bhav}</p>
-                <p style="width: 56px;">${array[i].rakam}</p>
-                <p style="width: 22px;">${array[i].paisa}</p>
+                <p style="width: 45px;">${array[i].daagina}</p>
+                <p style="width: 90px;">${array[i].hsn_code}</p>
+                <p style="width: 230px;">${array[i].maal}</p>
+                <p style="width: 65px;">${array[i].jatho}</p>
+                <p style="width: 90px;">${array[i].bhav}</p>
+                <p style="width: 80px;">${array[i].rakam}</p>
+                <p style="width: 29px;">${array[i].paisa}</p>
             </div>`;
 
     full__details.innerHTML += innerHTML;
